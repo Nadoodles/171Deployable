@@ -1,11 +1,40 @@
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
     min-height: 100vh;
+    margin: 0;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+header, main, footer {
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 600px; /* Adjust the maximum width as needed */
+}
+
+.video {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.header a:hover {
+    background-color: #0056b3;
 }
