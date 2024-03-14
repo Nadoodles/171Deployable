@@ -20,7 +20,6 @@ header, main, footer {
 }
 
 .header {
-    background-color: #333;
     padding: 20px;
     text-align: center;
 }
@@ -37,4 +36,27 @@ header, main, footer {
 
 .header a:hover {
     background-color: #0056b3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.contributor {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contributor h2 {
+    margin-top: 0;
+}
+
+.contributor p {
+    margin: 5px 0;
 }
