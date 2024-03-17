@@ -5,6 +5,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    background-image: url("../img/WebsiteBackground.png");
+    background-size: cover;
 }
 
 header, main, footer {
@@ -17,6 +19,7 @@ header, main, footer {
     width: 50%;
     height: auto;
     margin-bottom: 1rem;
+    border: 15px groove #ffb328;
 }
 
 .header {
@@ -49,14 +52,32 @@ header, main, footer {
 
 .contributor {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffb328;
     border-radius: 5px;
 }
 
 .contributor h2 {
     margin-top: 0;
+    color: #E35335;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contributor p {
     margin: 5px 0;
+}
+
+index.html {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
 }
