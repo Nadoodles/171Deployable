@@ -84,7 +84,8 @@ p {
 
 #Ptext {
     position: absolute;
-    right: 40px;
+    right: 50px;
+    bottom: 300px;
     font-size: larger;
     line-height: 2.5;
 }
