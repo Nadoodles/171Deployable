@@ -83,10 +83,10 @@ p {
 }
 
 #Ptext {
-    position: relative;
-    right: -650px;
-    top: -390px;
+    position: absolute;
+    right: 40px;
     font-size: larger;
+    line-height: 2.5;
 }
 
 #ButtonText {
