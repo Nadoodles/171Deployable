@@ -81,3 +81,16 @@ p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 550;
 }
+
+#Ptext {
+    position: relative;
+    right: -650px;
+    top: -390px;
+    font-size: larger;
+}
+
+#ButtonText {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
