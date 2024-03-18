@@ -18,15 +18,10 @@
     </div>
     <h1>Welcome to the Download Page</h1>
     
-    <p>Click the button below to start the download:</p>
-    
-    <button onclick="downloadFile()">Download</button>
-
     <main>
         <section>
-            <h2>File Download</h2>
             <p>Start Your Adventure by Downloading Our Game Now!.</p>
-            <a href="path_to_your_file/file_name.extension" download>Download File</a>
+            <button id="downloadButton">Download File</button>
             <!-- Replace "path_to_your_file/file_name.extension" with the actual path to your file -->
         </section>
     </main>
@@ -35,8 +30,20 @@
     </footer>
     
     <script>
+        document.getElementById('downloadButton').onclick = function() {
+        downloadFile();
+        };
+
         function downloadFile() {
             // Add your file download logic here
+            // For example, you can create a hidden link and simulate a click event
+            var downloadLink = document.createElement('a');
+            downloadLink.href = 'path_to_your_file/file_name.extension'; // Replace with your file path
+            downloadLink.download = 'file_name.extension'; // Replace with your file name
+            downloadLink.style.display = 'none';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
         }
     </script>
 </body>
