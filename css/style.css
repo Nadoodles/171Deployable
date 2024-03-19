@@ -54,6 +54,7 @@ header, main, footer {
     padding: 10px;
     border: 1px solid #ffb328;
     border-radius: 5px;
+    text-align: center;
 }
 
 .contributor h2 {
@@ -93,4 +94,36 @@ p {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
+}
+
+#BorderGroove {
+    border: 15px groove #ffb328;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+}
+
+#BorderTilemap {
+    border: 15px groove #ffb328;
+    justify-content: center;
+    width: 120px;
+    height: auto;
+}
+
+#RainbowBorder {
+    background-color: #302244;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    text-align: center;
+    height: 100px;
+    margin: 20px auto;
+    width: 250px;
+    animation: spin 2.5s normal linear;
+  }
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
 }
